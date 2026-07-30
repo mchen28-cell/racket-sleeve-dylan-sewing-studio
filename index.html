@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RacketSleeve - Handcrafted Tennis Grip Protection | Oʻahu, Hawaiʻi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Custom Color Palette Featuring #EFA8B8 */
+    :root {
+      --rose-pink: #EFA8B8;      /* Primary Hibiscus Pink */
+      --deep-berry: #4A2230;     /* Deep Rich Berry */
+      --berry-slate: #321B24;    /* Dark Charcoal Berry */
+      --soft-rose: #FCE8EE;      /* Soft Light Rose */
+      --coral-rose: #D96A82;     /* Warm Rose Accent */
+      
+      --card-bg: #FFFFFF;
+      --bg-page: #FDF6F8;
+      --text-dark: #4A2230;
+      --text-muted: #6E4855;
+      --border: #F3C9D3;
+      --shadow: rgba(239, 168, 184, 0.2);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding: 0;
+      background-image: radial-gradient(var(--border) 1.2px, transparent 1.2px);
+      background-size: 28px 28px;
+    }
+
+    /* Top Accent Line */
+    .top-accent-bar {
+      height: 6px;
+      width: 100%;
+      background: linear-gradient(90deg, var(--deep-berry), var(--rose-pink), var(--soft-rose));
+    }
+
+    /* Header & Origin Tag */
+    .header-nav {
+      text-align: center;
+      padding: 28px 16px 12px 16px;
+    }
+
+    .header-logo {
+      max-width: 165px;
+      height: auto;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.06));
+    }
+
+    .origin-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-top: 8px;
+      display: inline-block;
+      background: var(--deep-berry);
+      padding: 6px 18px;
+      border-radius: 999px;
+      box-shadow: 0 2px 8px rgba(74, 34, 48, 0.25);
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 12px 16px 40px 16px;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 24px var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-family: 'Calistoga', Georgia, serif;
+      color: var(--deep-berry);
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      line-height: 1.35;
+      font-weight: 400;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 44px;
+      height: 4px;
+      background: var(--rose-pink);
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+
+    /* Section 1: Hero */
+    .hero {
+      text-align: center;
+      padding-top: 28px;
+      padding-bottom: 32px;
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--soft-rose);
+      color: var(--deep-berry);
+      font-weight: 800;
+      font-size: 0.8rem;
+      padding: 7px 18px;
+      border-radius: 9999px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      border: 1.5px solid var(--rose-pink);
+    }
+
+    .sub-headline {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      max-width: 540px;
+      margin: 0 auto 22px auto;
+    }
+
+    .logo-hero-wrapper {
+      margin-top: 16px;
+      padding: 28px 20px;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FDF3F6 100%);
+      border-radius: 16px;
+      border: 1.5px solid var(--border);
+      position: relative;
+    }
+
+    .logo-hero-img {
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(74, 34, 48, 0.08);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .simple-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 18px 0 4px 0;
+    }
+
+    .divider-line {
+      height: 2px;
+      width: 80px;
+      background: linear-gradient(90deg, transparent, var(--rose-pink), transparent);
+    }
+
+    .divider-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--rose-pink);
+    }
+
+    /* Section 2: Problem */
+    blockquote {
+      background: #FFF9FA;
+      border-left: 4px solid var(--rose-pink);
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      border-radius: 0 12px 12px 0;
+      font-family: 'Calistoga', Georgia, serif;
+      font-size: 1.05rem;
+      color: var(--berry-slate);
+      line-height: 1.55;
+    }
+
+    .cost-line {
+      font-size: 0.98rem;
+      color: var(--coral-rose);
+      font-weight: 700;
+    }
+
+    /* Section 3: Offer & Pricing */
+    .price-box {
+      background: var(--soft-rose);
+      border: 2px dashed var(--rose-pink);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 22px;
+      text-align: center;
+    }
+
+    .price-main {
+      font-family: 'Calistoga', Georgia, serif;
+      font-size: 2.3rem;
+      color: var(--deep-berry);
+    }
+
+    .price-sub {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .steps {
+      list-style: none;
+      counter-reset: step-counter;
+      margin-top: 14px;
+    }
+
+    .steps li {
+      counter-increment: step-counter;
+      position: relative;
+      padding-left: 46px;
+      margin-bottom: 16px;
+      font-size: 0.98rem;
+      color: var(--text-dark);
+    }
+
+    .steps li::before {
+      content: counter(step-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background-color: var(--deep-berry);
+      color: #FFFFFF;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      font-family: 'Outfit', sans-serif;
+      box-shadow: 0 3px 8px rgba(74, 34, 48, 0.3);
+    }
+
+    /* Section 4: Proof */
+    .proof-box {
+      text-align: center;
+      background: linear-gradient(135deg, #4A2230 0%, #321B24 100%);
+      color: #FFFFFF;
+      padding: 34px 20px;
+      border-radius: 16px;
+      border: 2px solid var(--rose-pink);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(74, 34, 48, 0.3);
+    }
+
+    .stat-number {
+      font-family: 'Calistoga', Georgia, serif;
+      font-size: 2.8rem;
+      color: var(--rose-pink);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 1rem;
+      color: #FDF6F8;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* Section 5: Objections */
+    .faq-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      font-weight: 700;
+      font-size: 1.02rem;
+      color: var(--deep-berry);
+      margin-bottom: 4px;
+    }
+
+    .faq-a {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* Section 6: Call to Action */
+    .cta-section {
+      text-align: center;
+      padding: 40px 16px;
+      background: linear-gradient(135deg, #4A2230 0%, #2A131C 100%);
+      color: white;
+      border-radius: 20px;
+      border: 2px solid var(--rose-pink);
+    }
+
+    .cta-section h2 {
+      color: #FFFFFF;
+    }
+
+    .cta-section h2::after {
+      margin: 8px auto 0 auto;
+      background: var(--rose-pink);
+    }
+
+    .cta-section p {
+      color: #FDF6F8;
+      margin-top: 10px;
+      margin-bottom: 24px;
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      max-width: 340px;
+      background: linear-gradient(180deg, #F3B7C5 0%, #EFA8B8 100%);
+      color: #321B24;
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 18px 28px;
+      border-radius: 12px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      box-shadow: 0 6px 20px rgba(239, 168, 184, 0.45);
+      transition: all 0.2s ease;
+      border: 1px solid #F8CAD4;
+    }
+
+    .btn:hover {
+      background: linear-gradient(180deg, #F8CAD4 0%, #F3B7C5 100%);
+      transform: translateY(-2px);
+    }
+
+    .top-btn-wrapper {
+      margin-bottom: 20px;
+    }
+
+    /* Embedded Form Wrapper */
+    .form-embed-container {
+      width: 100%;
+      margin: 20px 0 12px 0;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .form-embed-container iframe {
+      width: 100% !important;
+      max-width: 100% !important;
+      border: 0;
+      display: block;
+    }
+
+    .guarantee-text {
+      margin-top: 16px;
+      font-size: 0.88rem;
+      color: #FCE8EE;
+    }
+
+    .footer-location {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.85rem;
+      color: var(--deep-berry);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Accent Bar -->
+  <div class="top-accent-bar"></div>
+
+  <!-- Header with Brand Logo -->
+  <header class="header-nav">
+    <img src="./Untitled design.jpg" alt="RacketSleeve Logo" class="header-logo">
+    <div>
+      <div class="origin-tag">Dylan's Sewing Studio • Oʻahu</div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- 1. Headline & How it Works -->
+    <section class="hero">
+      <div class="brand-badge">LOCALLY HAND-SEWN IN HAWAIʻI</div>
+      <h1>RacketSleeve is a sub-company of Dylan's Sewing Studio that creates tennis racket grip covers</h1>
+      <p class="sub-headline">Slide the cover over your racket handle to protect from wind, dirt, and rain</p>
+
+      <div class="top-btn-wrapper">
+        <a href="#signup" class="btn">Get your racket grip cover here!</a>
+      </div>
+      
+      <div class="logo-hero-wrapper">
+        <img src="IMG_5199.jpg" alt="RacketSleeve Grip Cover Photo" class="logo-hero-img">
+        
+        <div class="simple-divider">
+          <div class="divider-line"></div>
+          <div class="divider-dot"></div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Customer Problem & Real Cost -->
+    <section>
+      <h2>The Problem</h2>
+      <blockquote>
+        "I keep having to regrip my racket every time it rains or the wind blows on it. It is frustrating to spend so much time regriping the rackets, especially when the grip was new and got ruined by the elements."
+      </blockquote>
+      <p class="cost-line">It's inconvenient not to have a fresh grip when you need it. Avoid this by purchacing a racket cover.</p>
+    </section>
+
+    <!-- 3. What They Get & Step-by-Step Price -->
+    <section>
+      <h2>What You Get & Pricing</h2>
+      
+      <div class="price-box">
+        <div class="price-main">$5 Base Cover</div>
+        <div class="price-sub">Available in Grey or White. Add optional text for +$1 per character (any color or font).</div>
+      </div>
+
+      <h2>How It Works</h2>
+      <ol class="steps">
+        <li>Pick your base cover color (grey or white).</li>
+        <li>Choose optional custom embroidery (+$1 per character).</li>
+        <li>Slip the RacketSleeve over your racket handle when you set your bag down.</li>
+        <li>Pull it off before your match starts to play with a totally dry grip.</li>
+      </ol>
+    </section>
+
+    <!-- 4. Proof -->
+    <section>
+      <h2>Proof</h2>
+      <div class="proof-box">
+        <div class="stat-number">Over $200</div>
+        <div class="stat-label">Generated in real sales from local players</div>
+      </div>
+    </section>
+
+    <!-- 5. Two Real Objections -->
+    <section>
+      <h2>Got Questions?</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">What if it breaks while I am using it?</p>
+        <p class="faq-a">If your racket cover breaks in the first 30 days, we will issue you a free replacement right away.</p>
+      </div>
+    </section>
+
+    <!-- 6. Sign-Up Section -->
+    <section class="cta-section" id="signup">
+      <h2>Get Your RacketSleeve</h2>
+      <p>Have questions or ready to order? We would love to hear from you!</p>
+
+      <a href="#signup" class="btn">Get in touch</a>
+
+      <div class="form-embed-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQxo67uysZ8Nr9ySMIaAge5m7fiwCMpHwNANzViM16_lN5KQ/viewform?embedded=true" width="640" height="1166" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <p class="guarantee-text">Clicking above takes you to our quick order form.</p>
+    </section>
+
+    <div class="footer-location">Handcrafted on Oʻahu • Dylan's Sewing Studio</div>
+
+  </div>
+
+</body>
+</html>
